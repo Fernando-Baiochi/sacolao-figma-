@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sacolão Feira & Hortifruti</title>
+  <link rel="stylesheet" href="style.css" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+ 
+  <header class="header">
+    <div class="header__inner container">
+
+    
+      <a href="index-com-link-produtos.html" class="header__logo" aria-label="Sacolão Feira e Hortifruti - Página inicial">
+        <span class="header__logo-icon" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="36" height="36" rx="8" fill="#2D6A4F"/>
+            <path d="M10 14h16l-2 10H12L10 14Z" fill="#fff" fill-opacity=".9"/>
+            <path d="M14 14c0-2.2 1.8-4 4-4s4 1.8 4 4" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+            <path d="M16 20l1 3M20 20l-1 3" stroke="#F07B19" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+
+        <span class="header__logo-text">
+          <span class="header__logo-name">Sacolão</span>
+          <span class="header__logo-sub">FEIRA &amp; HORTIFRUTI</span>
+        </span>
+      </a>
+
+    
+      <form class="header__search" role="search" action="#">
+        <label for="search-input" class="sr-only">Buscar produtos</label>
+        <svg class="header__search-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+          <circle cx="7.5" cy="7.5" r="5.5" stroke="#9CA3AF" stroke-width="1.8"/>
+          <path d="M11.5 11.5L15.5 15.5" stroke="#9CA3AF" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <input
+          id="search-input"
+          type="search"
+          class="header__search-input"
+          placeholder="Buscar produtos..."
+          autocomplete="off"
+        />
+      </form>
+
+     
+      <div class="header__actions">
+        <a href="cadastro.html" class="header__register">Criar conta</a>
+
+        <a href="#" class="header__cart" aria-label="Ver carrinho, 3 itens">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect width="24" height="24" rx="6" fill="#2D6A4F"/>
+            <path d="M7 9h10l-1.5 7.5H8.5L7 9Z" fill="#fff" fill-opacity=".9"/>
+            <path d="M10 9c0-1.1.9-2 2-2s2 .9 2 2" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <span class="header__cart-badge" aria-hidden="true">3</span>
+        </a>
+
+        <button class="header__menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false">
+          <span class="header__menu-bar"></span>
+          <span class="header__menu-bar"></span>
+          <span class="header__menu-bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+   
+    <section class="hero" aria-label="Promoção principal">
+     
+      <div class="hero__overlay"></div>
+      <div class="hero__content container">
+        <p class="hero__eyebrow">FRESQUINHO TODO DIA</p>
+        <h1 class="hero__title">Frutas, legumes e verduras<br />direto do produtor</h1>
+        <p class="hero__desc">
+          Entrega no mesmo dia para pedidos até 14h. Frete grátis<br />acima de R$80.
+        </p>
+        <a href="produtos.html" class="btn btn--orange hero__cta">
+          Ver Produtos
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="Benefícios">
+      <div class="benefits__inner container">
+
+        <div class="benefits__item">
+        
+          <svg class="benefits__icon" width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+            <rect x="1" y="5" width="14" height="10" rx="2" stroke="#2D6A4F" stroke-width="1.6"/>
+            <path d="M15 8h3l2 4v3h-5V8Z" stroke="#2D6A4F" stroke-width="1.6" stroke-linejoin="round"/>
+            <circle cx="5" cy="16.5" r="1.5" stroke="#2D6A4F" stroke-width="1.6"/>
+            <circle cx="17" cy="16.5" r="1.5" stroke="#2D6A4F" stroke-width="1.6"/>
+          </svg>
+          <span>Frete grátis acima de R$80</span>
+        </div>
+
+        <div class="benefits__item">
+          
+          <svg class="benefits__icon" width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+            <path d="M11 19C11 19 4 14 4 8.5C4 5.46 6.69 3 10 3C11.39 3 12.67 3.47 13.67 4.26C15.03 3.47 16.62 3 18 3C18 3 19 10 13 13L11 19Z" stroke="#2D6A4F" stroke-width="1.6" stroke-linejoin="round"/>
+          </svg>
+          <span>Sem agrotóxicos</span>
+        </div>
+
+        <div class="benefits__item">
+         
+          <svg class="benefits__icon" width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+            <circle cx="11" cy="12" r="7" stroke="#2D6A4F" stroke-width="1.6"/>
+            <path d="M11 8.5V12l2.5 2.5" stroke="#2D6A4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8.5 3.5h5" stroke="#2D6A4F" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+          <span>Entrega no mesmo dia</span>
+        </div>
+
+      </div>
+    </section>
+
+   
+    <section class="products-section" aria-labelledby="destaques-titulo">
+      <div class="container">
+
+        <div class="section-header">
+          <h2 class="section-header__title" id="destaques-titulo">Destaques da Semana</h2>
+          <a href="#" class="section-header__link">
+            Ver todos
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="products-grid">
+
+        
+          <article class="product-card">
+            <div class="product-card__img-wrap">
+             
+              <img
+                src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?w=400&h=240&fit=crop"
+                alt="Manga Palmer"
+                class="product-card__img"
+                loading="lazy"
+                width="400"
+                height="240"
+              />
+              <span class="product-card__badge badge--orange">Oferta</span>
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Frutas</p>
+              <h3 class="product-card__name">Manga Palmer</h3>
+              <div class="product-card__rating">
+                <span class="product-card__star" aria-hidden="true">★</span>
+                <span>4.9 (234)</span>
+              </div>
+              <div class="product-card__footer">
+                <p class="product-card__price">
+                  R$ 3,99<span class="product-card__unit">/kg</span>
+                </p>
+                <button class="btn btn--green btn--sm" type="button">
+                
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                    <rect x="1" y="3.5" width="9" height="7" rx="1.5" stroke="currentColor" stroke-width="1.4"/>
+                    <path d="M3 3.5c0-.8.7-1.5 1.5-1.5h3c.8 0 1.5.7 1.5 1.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                    <circle cx="12" cy="5" r="2" fill="#F07B19"/>
+                    <path d="M11 5h2M12 4v2" stroke="#fff" stroke-width="1" stroke-linecap="round"/>
+                  </svg>
+                  Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+
+         
+          <article class="product-card">
+            <div class="product-card__img-wrap">
+            
+              <img
+                src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=400&h=240&fit=crop"
+                alt="Banana Nanica"
+                class="product-card__img"
+                loading="lazy"
+                width="400"
+                height="240"
+              />
+              <span class="product-card__badge badge--green">Orgânico</span>
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Frutas</p>
+              <h3 class="product-card__name">Banana Nanica</h3>
+              <div class="product-card__rating">
+                <span class="product-card__star" aria-hidden="true">★</span>
+                <span>4.7 (189)</span>
+              </div>
+              <div class="product-card__footer">
+                <p class="product-card__price">
+                  R$ 4,49<span class="product-card__unit">/kg</span>
+                </p>
+                <button class="btn btn--green btn--sm" type="button">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                    <rect x="1" y="3.5" width="9" height="7" rx="1.5" stroke="currentColor" stroke-width="1.4"/>
+                    <path d="M3 3.5c0-.8.7-1.5 1.5-1.5h3c.8 0 1.5.7 1.5 1.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                    <circle cx="12" cy="5" r="2" fill="#F07B19"/>
+                    <path d="M11 5h2M12 4v2" stroke="#fff" stroke-width="1" stroke-linecap="round"/>
+                  </svg>
+                  Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+
+        
+          <article class="product-card">
+            <div class="product-card__img-wrap">
+             
+              <img
+                src="https://images.unsplash.com/photo-1573246123716-6b1782bfc499?w=400&h=240&fit=crop"
+                alt="Mix de Frutas da Feira"
+                class="product-card__img"
+                loading="lazy"
+                width="400"
+                height="240"
+              />
+              <span class="product-card__badge badge--purple">Kit</span>
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Frutas</p>
+              <h3 class="product-card__name">Mix de Frutas da Feira</h3>
+              <div class="product-card__rating">
+                <span class="product-card__star" aria-hidden="true">★</span>
+                <span>4.8 (98)</span>
+              </div>
+              <div class="product-card__footer">
+                <p class="product-card__price product-card__price--multiline">
+                  R$ 18,90<span class="product-card__unit">/cesta</span>
+                </p>
+                <button class="btn btn--green btn--sm" type="button">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                    <rect x="1" y="3.5" width="9" height="7" rx="1.5" stroke="currentColor" stroke-width="1.4"/>
+                    <path d="M3 3.5c0-.8.7-1.5 1.5-1.5h3c.8 0 1.5.7 1.5 1.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                    <circle cx="12" cy="5" r="2" fill="#F07B19"/>
+                    <path d="M11 5h2M12 4v2" stroke="#fff" stroke-width="1" stroke-linecap="round"/>
+                  </svg>
+                  Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+
+         
+          <article class="product-card">
+            <div class="product-card__img-wrap">
+             
+              <img
+                src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=400&h=240&fit=crop"
+                alt="Tomate Italiano"
+                class="product-card__img"
+                loading="lazy"
+                width="400"
+                height="240"
+              />
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Legumes</p>
+              <h3 class="product-card__name">Tomate Italiano</h3>
+              <div class="product-card__rating">
+                <span class="product-card__star" aria-hidden="true">★</span>
+                <span>4.6 (145)</span>
+              </div>
+              <div class="product-card__footer">
+                <p class="product-card__price">
+                  R$ 6,99<span class="product-card__unit">/kg</span>
+                </p>
+                <button class="btn btn--green btn--sm" type="button">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                    <rect x="1" y="3.5" width="9" height="7" rx="1.5" stroke="currentColor" stroke-width="1.4"/>
+                    <path d="M3 3.5c0-.8.7-1.5 1.5-1.5h3c.8 0 1.5.7 1.5 1.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                    <circle cx="12" cy="5" r="2" fill="#F07B19"/>
+                    <path d="M11 5h2M12 4v2" stroke="#fff" stroke-width="1" stroke-linecap="round"/>
+                  </svg>
+                  Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="promo-banners" aria-label="Promoções em destaque">
+      <div class="container">
+
+        
+        <article class="promo-banner">
+       
+          <div class="promo-banner__bg" style="background-image: url('https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&h=240&fit=crop');" role="img" aria-label="Cestas Orgânicas"></div>
+          <div class="promo-banner__overlay"></div>
+          <div class="promo-banner__content">
+            <h2 class="promo-banner__title">Cestas Orgânicas</h2>
+            <a href="#" class="btn btn--orange">Montar cesta</a>
+          </div>
+        </article>
+
+      
+        <article class="promo-banner">
+         
+          <div class="promo-banner__bg" style="background-image: url('https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=800&h=240&fit=crop');" role="img" aria-label="Frutas até 40% off"></div>
+          <div class="promo-banner__overlay"></div>
+          <div class="promo-banner__content">
+            <h2 class="promo-banner__title">Frutas até 40% off</h2>
+            <a href="#" class="btn btn--orange">Ver ofertas</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="products-section" aria-labelledby="mais-produtos-titulo">
+      <div class="container">
+
+        <div class="section-header">
+          <h2 class="section-header__title" id="mais-produtos-titulo">Mais Produtos</h2>
+        </div>
+
+        <div class="products-grid">
+
+          
+          <article class="product-card">
+            <div class="product-card__img-wrap">
+               
+              <img
+                src="https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?w=400&h=240&fit=crop"
+                alt="Pimentão Colorido"
+                class="product-card__img"
+                loading="lazy"
+                width="400"
+                height="240"
+              />
+              <span class="product-card__badge badge--orange">Oferta</span>
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Legumes</p>
+              <h3 class="product-card__name">Pimentão Colorido</h3>
+              <div class="product-card__rating">
+                <span class="product-card__star" aria-hidden="true">★</span>
+                <span>4.5 (112)</span>
+              </div>
+              <div class="product-card__footer">
+                <p class="product-card__price">
+                  R$ 9,99<span class="product-card__unit">/kg</span>
+                </p>
+                <button class="btn btn--green btn--sm" type="button">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                    <rect x="1" y="3.5" width="9" height="7" rx="1.5" stroke="currentColor" stroke-width="1.4"/>
+                    <path d="M3 3.5c0-.8.7-1.5 1.5-1.5h3c.8 0 1.5.7 1.5 1.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                    <circle cx="12" cy="5" r="2" fill="#F07B19"/>
+                    <path d="M11 5h2M12 4v2" stroke="#fff" stroke-width="1" stroke-linecap="round"/>
+                  </svg>
+                  Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          
+          <article class="product-card">
+            <div class="product-card__img-wrap">
+              
+              <img
+                src="couve_flor_organica_1845_1_8a4eb0bcce6aea0808150bdc0ddcabef.webp"
+                alt="Couve-Flor Orgânica"
+                class="product-card__img"
+                loading="lazy"
+                width="400"
+                height="240"
+              />
+              <span class="product-card__badge badge--green">Orgânico</span>
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Verduras</p>
+              <h3 class="product-card__name">Couve-Flor Orgânica</h3>
+              <div class="product-card__rating">
+                <span class="product-card__star" aria-hidden="true">★</span>
+                <span>4.8 (76)</span>
+              </div>
+              <div class="product-card__footer">
+                <p class="product-card__price">
+                  R$ 7,50<span class="product-card__unit">/unid</span>
+                </p>
+                <button class="btn btn--green btn--sm" type="button">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                    <rect x="1" y="3.5" width="9" height="7" rx="1.5" stroke="currentColor" stroke-width="1.4"/>
+                    <path d="M3 3.5c0-.8.7-1.5 1.5-1.5h3c.8 0 1.5.7 1.5 1.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                    <circle cx="12" cy="5" r="2" fill="#F07B19"/>
+                    <path d="M11 5h2M12 4v2" stroke="#fff" stroke-width="1" stroke-linecap="round"/>
+                  </svg>
+                  Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+
+       
+          <article class="product-card">
+            <div class="product-card__img-wrap">
+             
+              <img
+                src=  "limao-siciliano-2-1fm5ew68gu.webp"
+                alt="Limão Siciliano"
+                class="product-card__img"
+                loading="lazy"
+                width="400"
+                height="240"
+              />
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Frutas</p>
+              <h3 class="product-card__name">Limão Siciliano</h3>
+              <div class="product-card__rating">
+                <span class="product-card__star" aria-hidden="true">★</span>
+                <span>4.4 (88)</span>
+              </div>
+              <div class="product-card__footer">
+                <p class="product-card__price">
+                  R$ 5,99<span class="product-card__unit">/kg</span>
+                </p>
+                <button class="btn btn--green btn--sm" type="button">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                    <rect x="1" y="3.5" width="9" height="7" rx="1.5" stroke="currentColor" stroke-width="1.4"/>
+                    <path d="M3 3.5c0-.8.7-1.5 1.5-1.5h3c.8 0 1.5.7 1.5 1.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                    <circle cx="12" cy="5" r="2" fill="#F07B19"/>
+                    <path d="M11 5h2M12 4v2" stroke="#fff" stroke-width="1" stroke-linecap="round"/>
+                  </svg>
+                  Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+
+        
+          <article class="product-card">
+            <div class="product-card__img-wrap">
+             
+              <img
+                src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=400&h=240&fit=crop&q=80&crop=entropy&cs=tinysrgb"
+                alt="Verduras da Horta"
+                class="product-card__img"
+                loading="lazy"
+                width="400"
+                height="240"
+              />
+              <span class="product-card__badge badge--red">Mais Vendido</span>
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Verduras</p>
+              <h3 class="product-card__name">Verduras da Horta</h3>
+              <div class="product-card__rating">
+                <span class="product-card__star" aria-hidden="true">★</span>
+                <span>4.9 (203)</span>
+              </div>
+              <div class="product-card__footer">
+                <p class="product-card__price product-card__price--multiline">
+                  R$ 12,90<span class="product-card__unit">/bandeja</span>
+                </p>
+                <button class="btn btn--green btn--sm" type="button">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                    <rect x="1" y="3.5" width="9" height="7" rx="1.5" stroke="currentColor" stroke-width="1.4"/>
+                    <path d="M3 3.5c0-.8.7-1.5 1.5-1.5h3c.8 0 1.5.7 1.5 1.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                    <circle cx="12" cy="5" r="2" fill="#F07B19"/>
+                    <path d="M11 5h2M12 4v2" stroke="#fff" stroke-width="1" stroke-linecap="round"/>
+                  </svg>
+                  Adicionar
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+   
+    <section class="newsletter" aria-labelledby="newsletter-titulo">
+      <div class="newsletter__inner container">
+        <h2 class="newsletter__title" id="newsletter-titulo">Receba as melhores ofertas</h2>
+        <p class="newsletter__desc">Promoções exclusivas toda semana no seu e-mail.</p>
+        <form class="newsletter__form" action="#" method="post" novalidate>
+          <label for="newsletter-email" class="sr-only">Seu e-mail</label>
+          <input
+            id="newsletter-email"
+            type="email"
+            class="newsletter__input"
+            placeholder="seu@email.com.br"
+            autocomplete="email"
+            required
+          />
+          <button class="btn btn--green newsletter__btn" type="submit">Assinar</button>
+        </form>
+      </div>
+    </section>
+
+    <div class="footer-spacer" aria-hidden="true"></div>
+
+  </main>
+
+ 
+  <footer class="footer" aria-label="Rodapé">
+    <div class="footer__inner container">
+
+      
+      <div class="footer__brand">
+        <a href="#" class="footer__logo" aria-label="Sacolão Feira e Hortifruti">
+          <span class="footer__logo-name">Sacolão</span>
+          <span class="footer__logo-sub">FEIRA &amp; HORTIFRUTI</span>
+        </a>
+        <p class="footer__tagline">O melhor do campo direto na sua mesa, com qualidade e preço justo.</p>
+      </div>
+
+     
+      <nav class="footer__nav" aria-label="Páginas do site">
+        <h3 class="footer__nav-title">PÁGINAS</h3>
+        <ul class="footer__nav-list">
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Produtos</a></li>
+          <li><a href="#">Quem Somos</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Meu Pedido</a></li>
+          <li><a href="#">Criar Conta</a></li>
+        </ul>
+      </nav>
+
+     
+      <address class="footer__contact">
+        <h3 class="footer__nav-title">CONTATO</h3>
+        <ul class="footer__contact-list">
+          <li>
+           
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M8 1C5.24 1 3 3.24 3 6c0 4.5 5 9 5 9s5-4.5 5-9c0-2.76-2.24-5-5-5Zm0 6.5A1.5 1.5 0 1 1 8 4.5a1.5 1.5 0 0 1 0 3Z" fill="#F07B19"/>
+            </svg>
+            <span>Rua das Flores, 142 — Bairro Verde</span>
+          </li>
+          <li>
+           
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 2h3l1.5 3.5L6 7a9 9 0 0 0 3 3l1.5-1.5L14 10v3c0 .55-.45 1-1 1C6.4 14 2 9.6 2 3c0-.55.45-1 1-1Z" stroke="#F07B19" stroke-width="1.4" stroke-linejoin="round"/>
+            </svg>
+            <span>(11) 3344-5566</span>
+          </li>
+          <li>
+            
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <rect x="1" y="3" width="14" height="10" rx="2" stroke="#F07B19" stroke-width="1.4"/>
+              <path d="M1 5l7 5 7-5" stroke="#F07B19" stroke-width="1.4" stroke-linejoin="round"/>
+            </svg>
+            <span>oi@sacolaohortifruti.com.br</span>
+          </li>
+        </ul>
+        <p class="footer__hours">Seg–Sáb 07h–19h · Dom 07h–13h</p>
+      </address>
+
+    </div>
+
+    
+    <div class="footer__bottom">
+      <p>©️ 2025 Sacolão Feira &amp; Hortifruti</p>
+      <p>Desenvolvido por <a href="#" class="footer__dev-link">Fernando Baiochi Contrucci</a></p>
+    </div>
+    </footer>
+</body>
+</html>

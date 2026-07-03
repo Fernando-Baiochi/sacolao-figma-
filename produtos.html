@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Produtos do Sacolão Feira & Hortifruti" />
+  <title>Produtos | Sacolão Feira & Hortifruti</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="produtos-page">
+
+
+  <header class="header produtos-header">
+    <div class="produtos-header__inner container">
+      <a href="index-com-link-produtos.html" class="header__logo" aria-label="Voltar para a página inicial">
+        <span class="header__logo-icon" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="36" height="36" rx="8" fill="#2D6A4F"/>
+            <path d="M10 14h16l-2 10H12L10 14Z" fill="#fff" fill-opacity=".9"/>
+            <path d="M14 14c0-2.2 1.8-4 4-4s4 1.8 4 4" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+            <path d="M16 20l1 3M20 20l-1 3" stroke="#F07B19" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+
+        <span class="header__logo-text">
+          <span class="header__logo-name">Sacolão</span>
+          <span class="header__logo-sub">FEIRA &amp; HORTIFRUTI</span>
+        </span>
+      </a>
+
+      <nav class="produtos-header__nav" aria-label="Menu principal">
+        <a href="index-com-link-produtos.html">Início</a>
+        <a href="produtos.html" class="is-active" aria-current="page">Produtos</a>
+        <a href="produtos.html">Ofertas</a>
+        <a href="cadastro.html">Contato</a>
+      </nav>
+
+      <div class="produtos-header__actions">
+        <a href="cadastro-corrigido.html" class="produtos-header__register">Criar conta</a>
+
+        <a href="#" class="produtos-header__cart" aria-label="Ver carrinho">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M5 7h14l-1.5 10H6.5L5 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M9 7c0-1.66 1.34-3 3-3s3 1.34 3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+          <span>Meu carrinho</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="produtos-hero" aria-labelledby="produtos-titulo">
+      <div class="container produtos-hero__content">
+        <p class="produtos-hero__eyebrow">DO CAMPO PARA A SUA MESA</p>
+        <h1 id="produtos-titulo">Produtos fresquinhos todos os dias</h1>
+        <p>Escolha suas frutas, legumes e verduras favoritos. Depois, você poderá substituir os espaços reservados pelas imagens dos produtos.</p>
+      </div>
+    </section>
+
+    <section class="produtos-catalogo" id="catalogo" aria-label="Catálogo de produtos">
+      <div class="container">
+        <div class="produtos-catalogo__top">
+          <div>
+            <p class="produtos-catalogo__eyebrow">CATÁLOGO</p>
+            <h2>Encontre o que você precisa</h2>
+          </div>
+
+          <form class="produtos-search" action="#catalogo" role="search">
+            <label class="sr-only" for="busca-produtos">Buscar produtos</label>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+              <circle cx="7.5" cy="7.5" r="5.5" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M11.5 11.5L15.5 15.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+            <input id="busca-produtos" type="search" placeholder="Buscar produtos..." />
+          </form>
+        </div>
+
+        <nav class="produtos-categorias" aria-label="Categorias de produtos">
+          <a href="#todos" class="produtos-categorias__item is-active">Todos</a>
+          <a href="#frutas" class="produtos-categorias__item">Frutas</a>
+          <a href="#legumes" class="produtos-categorias__item">Legumes</a>
+          <a href="#verduras" class="produtos-categorias__item">Verduras</a>
+          <a href="#organicos" class="produtos-categorias__item">Orgânicos</a>
+        </nav>
+
+        <div class="produtos-layout" id="todos">
+          <aside class="produtos-filtros" aria-label="Filtros visuais">
+            <div class="produtos-filtros__group">
+              <h3>Categorias</h3>
+              <a href="#frutas">Frutas</a>
+              <a href="#legumes">Legumes</a>
+              <a href="#verduras">Verduras</a>
+              <a href="#organicos">Orgânicos</a>
+            </div>
+
+            <div class="produtos-filtros__group">
+              <h3>Faixa de preço</h3>
+              <label><input type="checkbox" /> Até R$ 5,00</label>
+              <label><input type="checkbox" /> R$ 5,00 a R$ 10,00</label>
+              <label><input type="checkbox" /> Acima de R$ 10,00</label>
+            </div>
+
+            <div class="produtos-filtros__group">
+              <h3>Disponibilidade</h3>
+              <label><input type="checkbox" /> Em oferta</label>
+              <label><input type="checkbox" /> Orgânicos</label>
+            </div>
+          </aside>
+
+          <div class="produtos-lista">
+            <div class="produtos-lista__heading">
+              <p><strong>12 produtos</strong> disponíveis para você</p>
+              <label for="ordenar-produtos">
+                Ordenar:
+                <select id="ordenar-produtos">
+                  <option>Mais relevantes</option>
+                  <option>Menor preço</option>
+                  <option>Maior preço</option>
+                  <option>Mais vendidos</option>
+                </select>
+              </label>
+            </div>
+
+            <section class="produtos-bloco" id="frutas" aria-labelledby="frutas-titulo">
+              <div class="produtos-bloco__title">
+                <h2 id="frutas-titulo">Frutas</h2>
+                <p>Doces, selecionadas e prontas para sua mesa.</p>
+              </div>
+
+              <div class="produtos-grid">
+                <article class="produto-card">
+                  <div class="produto-card__imagem produto-card__imagem--manga">
+                    <span class="produto-card__tag">Oferta</span>
+                  <img
+                      src="images (3).jpg"
+                      alt="Manga Palmer"
+                      style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;"
+                    />
+                  </div>
+                  <div class="produto-card__content">
+                    <p class="produto-card__categoria">Frutas</p>
+                    <h3>Manga Palmer</h3>
+                    <p class="produto-card__descricao">Maduras, doces e selecionadas.</p>
+                    <div class="produto-card__bottom">
+                      <p class="produto-card__preco">R$ 3,99 <span>/kg</span></p>
+                      <button class="produto-card__button" type="button">Adicionar</button>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="produto-card">
+                  <div class="produto-card__imagem produto-card__imagem--banana">
+                    <span class="produto-card__tag produto-card__tag--green">Orgânico</span>
+                   
+                    <img
+                      src="images (4).jpg"
+                      alt="Banana Nanica"
+                      style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;"
+                    />
+                  </div>
+                  <div class="produto-card__content">
+                    <p class="produto-card__categoria">Frutas</p>
+                    <h3>Banana Nanica</h3>
+                    <p class="produto-card__descricao">Ideal para lanches e vitaminas.</p>
+                    <div class="produto-card__bottom">
+                      <p class="produto-card__preco">R$ 4,49 <span>/kg</span></p>
+                      <button class="produto-card__button" type="button">Adicionar</button>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="produto-card">
+                  <div class="produto-card__imagem produto-card__imagem--mamao">
+                    
+                    <img
+                      src="download.jpg"
+                      alt="Mamão Formosa"
+                      style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;"
+                    />
+                  </div>
+                  <div class="produto-card__content">
+                    <p class="produto-card__categoria">Frutas</p>
+                    <h3>Mamão Formosa</h3>
+                    <p class="produto-card__descricao">Fresco e cheio de sabor.</p>
+                    <div class="produto-card__bottom">
+                      <p class="produto-card__preco">R$ 6,90 <span>/unid.</span></p>
+                      <button class="produto-card__button" type="button">Adicionar</button>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="produto-card">
+                  <div class="produto-card__imagem produto-card__imagem--laranja">
+                    
+                    <img
+                      src="images (5).jpg"
+                      alt="Laranja Pera"
+                      style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;"
+                    />
+                  </div>
+                  <div class="produto-card__content">
+                    <p class="produto-card__categoria">Frutas</p>
+                    <h3>Laranja Pera</h3>
+                    <p class="produto-card__descricao">Suculenta para sucos e receitas.</p>
+                    <div class="produto-card__bottom">
+                      <p class="produto-card__preco">R$ 4,99 <span>/kg</span></p>
+                      <button class="produto-card__button" type="button">Adicionar</button>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <section class="produtos-bloco" id="legumes" aria-labelledby="legumes-titulo">
+              <div class="produtos-bloco__title">
+                <h2 id="legumes-titulo">Legumes</h2>
+                <p>Itens essenciais para receitas todos os dias.</p>
+              </div>
+
+              <div class="produtos-grid">
+                <article class="produto-card">
+                  <div class="produto-card__imagem produto-card__imagem--tomate">
+                    <span class="produto-card__tag">Oferta</span>
+                    
+                    <img
+                      src="images (6).jpg"
+                      alt="Tomate Italiano"
+                      style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;"
+                    />
+                  </div>
+                  <div class="produto-card__content">
+                    <p class="produto-card__categoria">Legumes</p>
+                    <h3>Tomate Italiano</h3>
+                    <p class="produto-card__descricao">Fresco para saladas e molhos.</p>
+                    <div class="produto-card__bottom">
+                      <p class="produto-card__preco">R$ 6,99 <span>/kg</span></p>
+                      <button class="produto-card__button" type="button">Adicionar</button>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="produto-card">
+                  <div class="produto-card__imagem produto-card__imagem--cenoura">
+                   
+                    <img
+                      src="images (7).jpg"
+                      alt="Cenoura"
+                      style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;"
+                    />
+                  </div>
+                  <div class="produto-card__content">
+                    <p class="produto-card__categoria">Legumes</p>
+                    <h3>Cenoura</h3>
+                    <p class="produto-card__descricao">Crocante e selecionada.</p>
+                    <div class="produto-card__bottom">
+                      <p class="produto-card__preco">R$ 5,49 <span>/kg</span></p>
+                      <button class="produto-card__button" type="button">Adicionar</button>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="produto-card">
+                  <div class="produto-card__imagem produto-card__imagem--batata">
+                   
+                    <img
+                      src="images.webp"
+                      alt="Batata Inglesa"
+                      style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;"
+                    />
+                  </div>
+                  <div class="produto-card__content">
+                    <p class="produto-card__categoria">Legumes</p>
+                    <h3>Batata Inglesa</h3>
+                    <p class="produto-card__descricao">Versátil para todos os pratos.</p>
+                    <div class="produto-card__bottom">
+                      <p class="produto-card__preco">R$ 5,99 <span>/kg</span></p>
+                      <button class="produto-card__button" type="button">Adicionar</button>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="produto-card">
+                  <div class="produto-card__imagem produto-card__imagem--pimentao">
+                    
+                    <img
+                      src="images (8).jpg"
+                      alt="Pimentão Colorido"
+                      style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;"
+                    />
+                  </div>
+                  <div class="produto-card__content">
+                    <p class="produto-card__categoria">Legumes</p>
+                    <h3>Pimentão Colorido</h3>
+                    <p class="produto-card__descricao">Colorido, bonito e saboroso.</p>
+                    <div class="produto-card__bottom">
+                      <p class="produto-card__preco">R$ 9,99 <span>/kg</span></p>
+                      <button class="produto-card__button" type="button">Adicionar</button>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <section class="produtos-bloco" id="verduras" aria-labelledby="verduras-titulo">
+              <div class="produtos-bloco__title">
+                <h2 id="verduras-titulo">Verduras</h2>
+                <p>Colhidas e preparadas com todo cuidado.</p>
+              </div>
+
+              <div class="produtos-grid">
+                <article class="produto-card">
+                  <div class="produto-card__imagem produto-card__imagem--alface">
+                    <span class="produto-card__tag produto-card__tag--green">Orgânico</span>
+                   
+                    <img
+                      src="images (9).jpg"
+                      alt="Alface Crespa"
+                      style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;"
+                    />
+                  </div>
+                  <div class="produto-card__content">
+                    <p class="produto-card__categoria">Verduras</p>
+                    <h3>Alface Crespa</h3>
+                    <p class="produto-card__descricao">Folhas frescas para a sua salada.</p>
+                    <div class="produto-card__bottom">
+                      <p class="produto-card__preco">R$ 3,50 <span>/unid.</span></p>
+                      <button class="produto-card__button" type="button">Adicionar</button>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="produto-card">
+                  <div class="produto-card__imagem produto-card__imagem--couveflor">
+             
+                    <img
+                      src="images (10).jpg"
+                      alt="Couve-Flor"
+                      style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;"
+                    />
+                  </div>
+                  <div class="produto-card__content">
+                    <p class="produto-card__categoria">Verduras</p>
+                    <h3>Couve-Flor</h3>
+                    <p class="produto-card__descricao">Selecionada e pronta para cozinhar.</p>
+                    <div class="produto-card__bottom">
+                      <p class="produto-card__preco">R$ 7,50 <span>/unid.</span></p>
+                      <button class="produto-card__button" type="button">Adicionar</button>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="produto-card">
+                  <div class="produto-card__imagem produto-card__imagem--brocolis">
+                   
+                    <img
+                      src="images (11).jpg"
+                      alt="Brócolis"
+                      style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;"
+                    />
+                  </div>
+                  <div class="produto-card__content">
+                    <p class="produto-card__categoria">Verduras</p>
+                    <h3>Brócolis</h3>
+                    <p class="produto-card__descricao">Verde, fresco e muito nutritivo.</p>
+                    <div class="produto-card__bottom">
+                      <p class="produto-card__preco">R$ 6,90 <span>/unid.</span></p>
+                      <button class="produto-card__button" type="button">Adicionar</button>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="produto-card" id="organicos">
+                  <div class="produto-card__imagem produto-card__imagem--cheiroverde">
+                    <span class="produto-card__tag produto-card__tag--green">Orgânico</span>
+                  
+                    <img
+                      src="images (12).jpg"
+                      alt="Cheiro-verde"
+                      style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;"
+                    />
+                  </div>
+                  <div class="produto-card__content">
+                    <p class="produto-card__categoria">Verduras</p>
+                    <h3>Cheiro-verde</h3>
+                    <p class="produto-card__descricao">Salsinha e cebolinha para temperar.</p>
+                    <div class="produto-card__bottom">
+                      <p class="produto-card__preco">R$ 2,99 <span>/maço</span></p>
+                      <button class="produto-card__button" type="button">Adicionar</button>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="produtos-cta" id="ofertas" aria-labelledby="produtos-cta-titulo">
+      <div class="container produtos-cta__inner">
+        <div>
+          <p>OFERTAS DA SEMANA</p>
+          <h2 id="produtos-cta-titulo">Receba as melhores ofertas no seu e-mail.</h2>
+        </div>
+        <a class="btn btn--orange" href="cadastro-corrigido.html">Criar minha conta</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer produtos-footer" id="contato" aria-label="Rodapé">
+    <div class="footer__inner container">
+      <div class="footer__brand">
+        <a href="index-corrigido.html" class="footer__logo" aria-label="Página inicial">
+          <span class="footer__logo-name">Sacolão</span>
+          <span class="footer__logo-sub">FEIRA &amp; HORTIFRUTI</span>
+        </a>
+        <p class="footer__tagline">O melhor do campo direto na sua mesa, com qualidade e preço justo.</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Páginas do site">
+        <h3 class="footer__nav-title">PÁGINAS</h3>
+        <ul class="footer__nav-list">
+          <li><a href="index-corrigido.html">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="cadastro-corrigido.html">Criar Conta</a></li>
+        </ul>
+      </nav>
+
+      <address class="footer__contact">
+        <h3 class="footer__nav-title">CONTATO</h3>
+        <ul class="footer__contact-list">
+          <li><span>Rua das Flores, 142 — raposos mg </span></li>
+          <li><span>(11) 3344-5566</span></li>
+          <li><span>oi@sacolaohortifruti.com.br</span></li>
+        </ul>
+        <p class="footer__hours">Seg–Sáb 07h–19h · Dom 07h–13h</p>
+      </address>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© 2025 Sacolão Feira &amp; Hortifruti</p>
+      <p>Desenvolvido por <a href="#" class="footer__dev-link">Fernando Baiochi Contrucci</a></p>
+    </div>
+  </footer>
+</body>
+</html>

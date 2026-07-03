@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Página de cadastro do Sacolão Feira & Hortifruti" />
+  <title>Crie sua conta | Sacolão Feira & Hortifruti</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="cadastro-page">
+  
+
+  <header class="header cadastro-header">
+    <div class="header__inner container cadastro-header__inner">
+      <a href="index-com-link-produtos.html" class="header__logo" aria-label="Sacolão Feira e Hortifruti - Página inicial">
+        <span class="header__logo-icon" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="36" height="36" rx="8" fill="#2D6A4F"/>
+            <path d="M10 14h16l-2 10H12L10 14Z" fill="#fff" fill-opacity=".9"/>
+            <path d="M14 14c0-2.2 1.8-4 4-4s4 1.8 4 4" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+            <path d="M16 20l1 3M20 20l-1 3" stroke="#F07B19" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="header__logo-text">
+          <span class="header__logo-name">Sacolão</span>
+          <span class="header__logo-sub">FEIRA &amp; HORTIFRUTI</span>
+        </span>
+      </a>
+
+     
+      <a href="index-com-link-produtos.html" class="cadastro-header__back" aria-label="Voltar às compras">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+          <path d="M14.5 9H3.5M7.5 5 3.5 9l4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Voltar às compras
+      </a>
+    </div>
+  </header>
+
+  <main class="cadastro-main">
+    <section class="cadastro" aria-labelledby="cadastro-title">
+      <div class="cadastro__layout container">
+        <aside class="cadastro__intro" aria-label="Vantagens de criar uma conta">
+          <p class="cadastro__eyebrow">COMPRA FÁCIL E RÁPIDA</p>
+          <h1 class="cadastro__intro-title">Seu sacolão favorito, mais perto de você.</h1>
+          <p class="cadastro__intro-text">Crie sua conta para salvar seus pedidos, acompanhar entregas e receber ofertas exclusivas.</p>
+
+          <ul class="cadastro__benefits">
+            <li><span class="cadastro__benefit-icon" aria-hidden="true">✓</span>Pedidos mais rápidos</li>
+            <li><span class="cadastro__benefit-icon" aria-hidden="true">✓</span>Ofertas especiais no seu e-mail</li>
+            <li><span class="cadastro__benefit-icon" aria-hidden="true">✓</span>Acompanhamento da entrega</li>
+          </ul>
+        </aside>
+
+        <section class="cadastro__card" aria-label="Formulário de cadastro">
+          <div class="cadastro__card-header">
+            <h2 id="cadastro-title">Crie sua conta</h2>
+            <p>Preencha os dados abaixo para se cadastrar.</p>
+          </div>
+
+          <form class="cadastro__form" action="#" method="post">
+            <div class="cadastro__field cadastro__field--full">
+              <label for="nome">Nome completo</label>
+              <input id="nome" name="nome" type="text" placeholder="Digite seu nome completo" autocomplete="name" required />
+            </div>
+
+            <div class="cadastro__field cadastro__field--full">
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" placeholder="seu@email.com.br" autocomplete="email" required />
+            </div>
+
+            <div class="cadastro__field">
+              <label for="cpf">CPF</label>
+              <input id="cpf" name="cpf" type="text" inputmode="numeric" placeholder="000.000.000-00" maxlength="14" autocomplete="off" required />
+            </div>
+
+            <div class="cadastro__field">
+              <label for="telefone">Telefone</label>
+              <input id="telefone" name="telefone" type="tel" inputmode="tel" placeholder="(00) 00000-0000" maxlength="15" autocomplete="tel" required />
+            </div>
+
+            <div class="cadastro__field cadastro__field--full">
+              <label for="nascimento">Data de nascimento</label>
+              <input id="nascimento" name="nascimento" type="date" autocomplete="bday" required />
+            </div>
+
+            <div class="cadastro__field">
+              <label for="senha">Crie uma senha</label>
+              <input id="senha" name="senha" type="password" placeholder="Mínimo de 8 caracteres" minlength="8" autocomplete="new-password" required />
+            </div>
+
+            <div class="cadastro__field">
+              <label for="confirmar-senha">Confirme sua senha</label>
+              <input id="confirmar-senha" name="confirmar-senha" type="password" placeholder="Digite a senha novamente" minlength="8" autocomplete="new-password" required />
+            </div>
+
+            <label class="cadastro__checkbox cadastro__field--full">
+              <input type="checkbox" name="termos" required />
+              <span>Li e concordo com os <a href="#">Termos de Uso</a> e a <a href="#">Política de Privacidade</a>.</span>
+            </label>
+
+            <label class="cadastro__checkbox cadastro__field--full">
+              <input type="checkbox" name="ofertas" />
+              <span>Quero receber novidades e ofertas exclusivas por e-mail.</span>
+            </label>
+
+            <button class="btn btn--green cadastro__submit cadastro__field--full" type="submit">
+              Criar minha conta
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" aria-hidden="true">
+                <path d="M3 8.5h11M10 4.5l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </form>
+
+          <p class="cadastro__login">Já possui uma conta? <a href="#">Entrar</a></p>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer cadastro-footer" aria-label="Rodapé">
+    <div class="footer__bottom">
+      <p>© 2025 Sacolão Feira &amp; Hortifruti</p>
+      <p>Desenvolvido por <a href="#" class="footer__dev-link">Fernando Baiochi Contrucci</a></p>
+    </div>
+  </footer>
+</body>
+</html>
